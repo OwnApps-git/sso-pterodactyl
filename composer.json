@@ -1,30 +1,38 @@
 {
-    "name": "wemx/sso-pterodactyl",
-    "description": "Allows clients from WemX login to their Pterodactyl account with a single redirect",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mubeen Ullah",
-            "email": "mubeen@wemx.net"
-        }
-    ],
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "require": {
-        "php": "^8.0|^8.1|^8.2|^8.3",
-        "illuminate/support": "^10.0|^11.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "WemX\\Sso\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "WemX\\Sso\\SsoServiceProvider"
-            ]
-        }
+  "name": "ownapps/sso-pterodactyl",
+  "description": "Allows clients from WemX to login to their Pterodactyl account with a single redirect. Fork with support for custom redirect URLs.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "pterodactyl",
+    "sso",
+    "single-sign-on",
+    "wemx",
+    "authentication"
+  ],
+  "homepage": "https://github.com/ownapps/sso-pterodactyl",
+  "authors": [
+    {
+      "name": "Adam Moyle",
+      "email": "ownapps.git@proton.me"
     }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.0|^8.1|^8.2|^8.3",
+    "illuminate/support": "^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "WemX\\Sso\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "WemX\\Sso\\SsoServiceProvider"
+      ]
+    }
+  }
 }
