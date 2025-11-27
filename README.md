@@ -15,17 +15,21 @@ Laravel SSO is a package for implementing Single Sign-On (SSO) authorizations in
 To install the package, use Composer:
 
 ```bash
-composer require wemx/sso-pterodactyl
+composer require ownapps/sso-pterodactyl
 ```
 
 ## Configuration
+
 1. Publish the configuration file by running the following command:
+
 ```bash
 php artisan vendor:publish --tag=sso-wemx
 ```
+
 This command will publish the config/sso-wemx.php file, where you can set the secret key for SSO authorization.
 
 2. Generate new SSO key
+
 ```shell
 php artisan wemx:generate
 ```
@@ -56,6 +60,7 @@ public function loginPanel()
     return redirect()->intended($response['redirect']);
 }
 ```
+
 After being redirected to the /sso-login route, the user will be automatically authorized on the Laravel panel if their email address matches a record in the database.
 
 ## Support
